@@ -1,0 +1,145 @@
+#quest_question_template, .hid {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+.quest-question-wrap .leads-to h4 {
+    font-size: 13px;
+    color: #555;
+}
+
+/*Leads to tabs*/
+.quest-answer .quest-tabs h5 {
+    margin: 0 0 5px 0;
+    padding: 0;
+    color: #333;
+    font-weight: normal;
+}
+
+.quest-answer .quest-tabs .tab input, .quest-answer .quest-tabs .tab select {
+    width: 100%;
+}
+
+.quest-answer .quest-tabs input[type=radio] { display: none; }
+.quest-answer .quest-tabs input[type=radio] + label { display: inline-block }
+
+.quest-answer .quest-tabs input[type=radio] ~ .tab { display: none }
+.quest-answer .quest-tabs .tab1:checked ~ .tab.content1,
+.quest-answer .quest-tabs .tab2:checked ~ .tab.content2 {
+
+    display: block;
+    border: 1px solid #e5e5e5;
+
+}
+
+.quest-answer .quest-tabs input[type=radio] + label {
+    border: 1px solid #e5e5e5;
+    background: #EEE;
+    padding: 4px 12px;
+    position: relative;
+    top: 1px;
+}
+.quest-answer .quest-tabs input[type=radio]:checked + label {
+    background: #FFF;
+    border-bottom: 0;
+}
+.quest-answer .quest-tabs input[type=radio] ~ .tab {
+    padding: 12px;
+}
+
+/*End Leads to tabs*/
+
+
+/*Buttons*/
+
+.quest-controls{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 7px 0;
+    position: absolute;
+    top: -45px;
+    width: 320px;
+    right: 35px;
+}
+
+.quest-controls .stats {
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.quest-controls button {
+    display: inline-block;
+    padding: 2px;
+    min-width: 24px;
+    min-height: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    color: #aaa;
+    font-family: "Dashicons";
+    font-size: 22px;
+}
+
+.quest-controls button:hover {
+    color: #000;
+}
+
+.quest-controls button:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.quest-controls button.quest-add-before:before {
+    content: "\f172";
+    transform: rotate( -90deg );
+}
+
+.quest-controls button.quest-add-after:before {
+    content: "\f171";
+    transform: rotate( 90deg );
+}
+
+.quest-controls button.quest-move-left:before {
+    content: "\f340"
+}
+
+.quest-controls button.quest-move-right:before {
+    content: "\f344"
+}
+
+.quest-controls button.quest-remove:before {
+    content: "\f182";
+    left: 1px;
+}
+
+.quest-controls button.quest-first:before {
+    content: "\f516"
+}
+
+.quest-controls button.quest-prev:before {
+    content: "\f518"
+}
+
+.quest-controls button.quest-next:before {
+    content: "\f519"
+}
+
+.quest-controls button.quest-last:before {
+    content: "\f517"
+}
+
+.quest-controls button.quest-copy-to-new:before {
+    content: "\f105"
+}
+
+.quest-controls button.quest-remove:hover {
+    color: red;
+}
+
+/*End Buttons*/

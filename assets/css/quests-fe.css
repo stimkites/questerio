@@ -1,0 +1,37 @@
+#quest-content{
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#quest-start{
+    margin: 50px auto;
+    display: block;
+    min-width: 200px;
+    padding: 10px 20px;
+}
+
+.quest-question {
+    background: #fff;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 40px;
+}
+
+.quest-answer{
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 5px 0;
+    border-bottom: 1px solid transparent;
+    line-height: 1;
+}
+
+.quest-answer p {
+    line-height: 1;
+    padding: 0;
+    margin: 5px auto;
+}
+
+.quest-answer:hover {
+    border-bottom: 1px solid #e5e5e5;
+}
