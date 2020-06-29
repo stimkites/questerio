@@ -4,6 +4,7 @@ Allows to create lightweight quests easily!
 ## Installation and usage
 To install this plugin:
 1. Download latest ZIP from `master` branch
+2. Remove `-master` from root folder in the ZIP
 2. Goto Plugins -> Add New -> Upload
 3. Choose ZIP from your local drive
 4. Upload and activate the plugin
